@@ -1,83 +1,91 @@
-# JasonBassoon.github.io
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jason’s Tech Journey</title>
-  <meta name="description" content="Cybersecurity • Python • SOC Lab Projects" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason's Tech Journey</title>
   <style>
-    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#22d3ee; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,sans-serif;
-           background:linear-gradient(160deg,#0b1022,#111827); color:var(--text);}
-    .wrap { max-width:900px; margin:0 auto; padding:48px 20px; }
-    header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
-    .logo { font-weight:800; font-size:1.25rem; }
-    nav a { color:var(--muted); text-decoration:none; margin-left:16px; }
-    nav a:hover { color:var(--text); }
-    .hero { margin:48px 0; padding:28px; border:1px solid #1f2937; border-radius:20px;
-            background:radial-gradient(1200px 600px at -10% -20%,rgba(34,211,238,.15),transparent),var(--card); }
-    h1 { font-size:2.2rem; margin:0 0 10px; }
-    .sub { color:var(--muted); margin:0 0 18px; }
-    .cta { display:inline-block; padding:12px 16px; border-radius:12px; background:var(--accent);
-           color:#0b1022; font-weight:700; text-decoration:none; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:28px; }
-    .card { padding:18px; border:1px solid #1f2937; border-radius:16px; background:#0b1220; }
-    .card h3 { margin:0 0 6px; font-size:1.05rem; }
-    footer { margin:40px 0; color:var(--muted); font-size:.9rem; text-align:center; }
-    code { background:#0b1220; padding:.15rem .35rem; border-radius:.35rem; border:1px solid #1f2937; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #444;
+      margin-top: 1.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    ul li a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="logo">Jason’s Tech Journey</div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Welcome to Jason's Tech Journey</h1>
+    <p>Exploring cybersecurity, coding, and technology step by step.</p>
+  </header>
 
-    <section class="hero">
-      <h1>Cybersecurity • Python • SOC Lab</h1>
-      <p class="sub">Documenting my path from gig work to a SOC analyst role. Labs, notes, and experiments live here.</p>
-      <a class="cta" href="#projects">See Projects</a>
-
-      <div class="grid" id="projects" style="margin-top:18px">
-        <div class="card">
-          <h3>SOC Home Lab</h3>
-          <p>Ubuntu, Splunk, attacker/defender VMs, and detections.</p>
-          <p><code>splunk</code> <code>suricata</code> <code>elk</code></p>
-        </div>
-        <div class="card">
-          <h3>TryHackMe Path</h3>
-          <p>Notes & flags from SOC1 learning path and JtR basics.</p>
-          <p><code>tryhackme</code> <code>john</code> <code>wordlists</code></p>
-        </div>
-        <div class="card">
-          <h3>CS50P Exercises</h3>
-          <p>Selected Python scripts and problem set write-ups.</p>
-          <p><code>python</code> <code>cli</code> <code>oop</code></p>
-        </div>
-      </div>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm Jason, transitioning from gig work into a career in cybersecurity.
+        This site is where I share my progress, projects, and resources as I
+        build my skills in SOC operations, Python, AWS, and more.
+      </p>
     </section>
 
-    <section id="notes" class="grid">
-      <div class="card">
-        <h3>Blog/Notes</h3>
-        <p>Short posts as I learn: commands, configs, and gotchas.</p>
-      </div>
-      <div class="card" id="contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:hello@jasonstechjourney.com">hello@jasonstechjourney.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-      </div>
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">My Blog</a></li>
+        <li><a href="#">GitHub Projects</a></li>
+        <li><a href="#">SOC Lab Setup</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
     </section>
+  </main>
 
-    <footer>© <span id="y"></span> Jason Ettinger</footer>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <footer>
+    <p>&copy; 2025 Jason's Tech Journey</p>
+  </footer>
 </body>
 </html>
