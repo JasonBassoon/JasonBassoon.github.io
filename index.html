@@ -4,25 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jason E's Tech Journey</title>
+  <link rel="stylesheet" href="assets/css/site.css?v=1">
 </head>
 <body>
-  <h1>Welcome to Jason E's Tech Journey!</h1>
+  <div class="container">
+    <div class="card">
+      <h1>Welcome to Jason E's Tech Journey!</h1>
 
-  <img src="assets/images/avatar.png" alt="Avatar of Jason E." width="140">
+      <img class="avatar" src="assets/images/avatar.png" alt="Avatar of Jason E.">
 
-  <p>This site is a simple hub for my projects, notes, and experiments as I pivot into the tech industry/cybersecurity.</p>
+      <p class="lead">This site is a simple hub for my projects, notes, and experiments as I pivot into the tech industry/cybersecurity.</p>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="pages/about.html">About</a> |
-    <a href="pages/projects.html">Projects</a> |
-    <a href="pages/blog.html">Blog</a> |
-    <a href="pages/contact.html">Contact</a>
-  </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/projects.html">Projects</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
 
-  <footer>
-    © <span id="y"></span> JasonsTechJourney.com
-  </footer>
+      <footer>
+        © <span id="y"></span> JasonsTechJourney.com
+      </footer>
+    </div>
+  </div>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
